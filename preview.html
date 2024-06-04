@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NodeMailer Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            background-image:url('https://i.ibb.co/WgdmHfZ/bgimage.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header-title{
+            text-align: center;
+            font-size: 42px;
+            color:white;
+            padding-bottom:10px;
+        }
+
+
+
+        .header img {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+        }
+        .hello{
+            padding-top:15px;
+            font-size: 16px;
+            color:black;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.5;
+        }
+        .footer {
+            background-image: url('https://i.ibb.co/w0hcQrt/best-subtle-black-white-background-textures.png');
+            padding-top: 20px;
+            border-top: 1px solid #eaeaea;
+            text-align: center;
+            font-size: 14px;
+        
+            
+        }
+        .footer p {
+            margin: 5px 0;
+            color: white;
+            font-size: 18px;
+        }
+
+        .footer-logo{
+            display: inline;
+        }
+
+
+        .footer-text{
+            text-align: center;
+            font-size: 16px;
+            color:white;
+            padding-top: 5px;
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+    
+        .footer-site{
+            margin-top: 20px;
+
+        }
+
+        .footer-button {
+
+            font-family: Roboto, sans-serif;
+            font-weight: 0;
+            font-size: 18px;
+            color: white;
+            background: linear-gradient(to right,#cfe884, #007000);
+            padding: 10px 30px;
+            border: solid #01992c 2px;
+            box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+            border-radius: 50px;
+            transition : 1000ms;
+            transform: translateY(0);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            cursor: pointer;
+            text-align: center; 
+            margin: 0 auto;
+            transition: background 1s ease;
+        }
+        .footer-button:hover{animation: slideGradient 1s forwards;background: linear-gradient(to right,#007000, #c5ea55);
+        }
+
+        .sm-holder{
+            margin-top: 15px;
+            padding-bottom: 10px;
+        }
+
+        .sm-holder a{
+            margin-right: 15px;
+            
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="tastebit.ai"><img src="https://i.ibb.co/WvKQB38/unnamed-6-removebg-preview.png" alt="unnamed-6-removebg-preview" border="0"></a>
+            <div class="header-title"> Reviews, Reimagined With Ai<br>TasteBit</div>
+        </div>
+        <div class="hello">Hello, {{username}}</div>
+        <div class="content">
+            <p>{{text}}</p>
+            <p>{{text2}}</p>
+            <p>{{text3}}</p>
+        </div>
+        <div class="footer">
+            <p>Best regards,</p>
+            <p>The Team</p>
+            <div class="footer-site">
+                <a href="tastebit.ai" style="text-decoration: none;">
+                    <button class="footer-button">
+                        Tastebit.ai
+                    </button>
+                </a>
+                <div class="footer-text"> ©2024 Tastebit Technologies, LLC, a Tech company.</div>
+                <div class="sm-holder">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://i.ibb.co/sbHmHZr/Facebook-Logo-2023.png" alt="Facebook-Logo-2023" border="0" style="max-width: 40px; height: auto;"></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://i.ibb.co/4j0TrCG/Instagram-icon-png.png" alt="Instagram-icon-png" border="0" style="max-width: 40px; height: auto;"></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://i.ibb.co/kq668zm/Logo-of-Twitter-svg-2.png" alt="Logo-of-Twitter-svg-2" border="0" style="max-width: 40px; height: auto;"></a>                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
